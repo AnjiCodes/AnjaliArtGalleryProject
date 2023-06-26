@@ -1,0 +1,20 @@
+﻿@model IEnumerable<AnjaliArtGalleryProject.Models.AlbumDto>
+@{
+    ViewBag.Title = "List";
+}
+<style>
+    body{
+        background-color: blanchedalmond;
+        font-family: monospace;
+    }
+    h2 {
+        color: black;
+    }
+</style>
+<h2>List of Album</h2>
+@foreach(var album in Model)
+{
+    <h2><a href="/Image/List/@album.AlbumID">@album.AlbumName</a></h2>
+}
+
+

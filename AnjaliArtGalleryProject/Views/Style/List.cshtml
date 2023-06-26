@@ -1,0 +1,22 @@
+﻿@model IEnumerable<AnjaliArtGalleryProject.Models.StyleDto>
+@{
+    ViewBag.Title = "List";
+}
+<style>
+    body {
+        background-color: blanchedalmond;
+        font-family: monospace;
+    }
+
+    h2 {
+        color: black;
+    }
+</style>
+
+<h1>List of Styles</h1>
+<div>
+    @foreach (var style in Model)
+    {
+        <h2>@style.StyleName</h2>
+    }
+</div>
